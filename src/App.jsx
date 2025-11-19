@@ -1608,6 +1608,7 @@
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 
 // import Dashboard from "./pages/Dashboard";
 import ReportPothole from "./pages/ReportPothole";
@@ -1616,6 +1617,7 @@ import LoginOTP from "./pages/Auth/LoginOTP";
 function App() {
   return (
     <BrowserRouter>
+      <Toaster position="top-right" /> 
       <Routes>
         {/* <Route path="/" element={<Dashboard />} /> */}
         <Route path="/" element={<ReportPothole />} />
